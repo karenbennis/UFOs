@@ -39,6 +39,7 @@ The app was coded using the following steps:
 5. Pass *filteredData* to the **buildTable** function to build table with only the filtered data.
 6. Use d3.selectAll to run *updateFilters* when the user clicks the filter button.
 7. Call **buildTable** function with *tableData* passed in.
+
 NOTE: Since buildTable() takes *tableData*, the raw data is passed in on loading the page (since *tableData* is set to equal 'data'); and the filtered data is passed in when the user clicks the filter button since when the button is clicked, *tableData* is set to equal *filteredData*.
 
 ## Recommendations
