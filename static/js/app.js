@@ -43,25 +43,33 @@ function updateFilters() {
     filters.datetime = date;
   }
   else delete(filters.datetime);
+  
   if (city) {
     filters.city = city;
   }
   else delete(filters.city);
+  
   if (state) {
     filters.state = state;
   }
   else delete(filters.state);
+  
   if (country) {
     filters.country = country;
   }
   else delete(filters.country);
+  
   if (shape) {
     filters.shape = shape;
   }  
   else
     delete(filters.shape);
 
+// Show the filters that are applicable in the console
+// this is not required, but is being to track whether this function works  
 console.log(filters);
+
+
   // // Call function to apply all filters and rebuild the table
   filterTable();
 };
@@ -74,10 +82,11 @@ function filterTable() {
   // Loop through all of the filters and keep any data that
   // matches the filter values
 
-  // Before looping, convert object into array of arrays
+  // Before looping, convert object into array of entries
   const filterEntries = Object.entries(filters)
 
-  // Destructure array into key and value and loop through the filters
+  // Loop through the filterEntries array and destructure each array entry into key (filterName) and value (inputValue)
+  // and use JS .filter() to find rows that match (filterName, inputValue) and assign that data to the variable filteredData
   for (const [filterName, inputValue] of filterEntries) {
     filteredData = filteredData.filter(row => row[filterName] === inputValue);
   }
