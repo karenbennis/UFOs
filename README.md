@@ -1,9 +1,12 @@
 # UFOs
 
 ## Project Overview
-The following repository includes files for creating a UFO website which displays UFO sightings in a table. To enhance the readability and overall user experince, the ability to filter UFO sighting table was included. Users can filter by date, city, state, country, and shape.
+The following repository includes files for creating a UFO website which displays UFO sightings in a table. Users can filter by date, city, state, country, and shape.
 
-![]()
+This is how the final product looks:
+![](https://github.com/karenbennis/UFOs/blob/master/WebPageScreenshot.png)
+
+The steps for creating the app are described in the *Method* section, and can be reviewed in detail by looking through these files: app.js, index.html, style.css.
 
 ## Resources
 * Data Sources: data.js
