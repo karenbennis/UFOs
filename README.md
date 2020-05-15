@@ -10,7 +10,7 @@ The steps for creating the app are described in the *Method* section, and can be
 
 ## Resources
 * Data Sources: data.js
-* Langauges: JavaScript ES6+,  HTML5, CSS, Bootstrap
+* Languages: JavaScript ES6+,  HTML5, CSS, Bootstrap
 * Software: Visual Studio Code 1.43.0, Chrome 81.0.4044.138
 
 ## Method
